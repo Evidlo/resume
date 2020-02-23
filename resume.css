@@ -1,0 +1,62 @@
+/* ------ Global Settings ------ */
+
+@page {
+    size: Letter; /* Change from the default size of A4 */
+    margin: 0.25in; /* Set margin on each page */
+}
+
+body {
+    font-family: helvetica;
+    font-size: 10pt;
+}
+
+/* ------ Headings ------ */
+
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 14pt;
+}
+
+h1, h2 {
+    padding: 0;
+}
+h1 hr, h2 hr {
+    background-color: black;
+    margin: 0;
+}
+h1 hr {
+    height: 0.25em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ------ Sections ------ */
+
+.twocolumn {
+    columns: 100px 2;
+    max-height: 12em;
+    column-fill: balance;
+}
+section ul, section p {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+section.twocolumn ul li {
+    margin: 0.5em;
+}
+
+left {
+    float: left;
+}
+
+right {
+    float: right;
+}
