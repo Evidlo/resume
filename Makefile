@@ -7,7 +7,7 @@ TEX_SOURCE := resume.html
 
 all:
 
-	evince $(shell basename ${TEX_SOURCE} .html).pdf &
+	# evince $(shell basename ${TEX_SOURCE} .html).pdf &
 
 	while true;
 	do

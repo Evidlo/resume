@@ -10,6 +10,19 @@ body {
     font-size: 10pt;
 }
 
+/* ------ Header ------ */
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#sinc {
+    width: 100%;
+    position: relative;
+    top: -4vh;
+}
+
 /* ------ Headings ------ */
 
 h1 {
@@ -31,11 +44,6 @@ h1 hr {
     height: 0.25em;
 }
 
-.links {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 /* ------ Sections ------ */
 
@@ -44,9 +52,16 @@ h1 hr {
     max-height: 12em;
     column-fill: balance;
 }
+
+section div {
+    margin-top: 1em;
+}
+
 section ul, section p {
     list-style-type: none;
     padding-left: 1em;
+    margin-bottom: 0;
+    /* break-inside: avoid-column; */
 }
 
 section.twocolumn ul li {
