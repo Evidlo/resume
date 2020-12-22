@@ -12,7 +12,7 @@ body {
 
 /* ------ Header ------ */
 
-.links {
+nav {
     display: flex;
     justify-content: space-evenly;
 }
@@ -45,33 +45,32 @@ h1 hr {
 }
 
 
-/* ------ Sections ------ */
+/* ------ Other ------ */
 
 .twocolumn {
     columns: 100px 2;
-    max-height: 12em;
-    column-fill: balance;
 }
 
-section div {
-    margin-top: 1em;
+.twocolumn section h3 {
+    margin-top: 0;
 }
 
-section ul, section p {
+table.timeline td:first-child {
+    width: 100%;
+}
+table.timeline td:last-child {
+    white-space: nowrap;
+    text-align: right;
+}
+
+ul, p {
     list-style-type: none;
     padding-left: 1em;
-    margin-bottom: 0;
-    /* break-inside: avoid-column; */
+    margin: 0;
 }
 
-section.twocolumn ul li {
-    margin: 0.5em;
+.twocolumn section ul {
+    page-break-inside: avoid;
+    break-inside: avoid-column;
 }
 
-left {
-    float: left;
-}
-
-right {
-    float: right;
-}
