@@ -47,6 +47,10 @@ h1 hr {
 
 /* ------ Other ------ */
 
+/* article { */
+/*     page-break-inside: avoid; */
+/* } */
+
 .twocolumn {
     columns: 100px 2;
 }
@@ -66,7 +70,7 @@ table.timeline td:last-child {
 ul, p {
     list-style-type: none;
     padding-left: 1em;
-    margin: 0;
+    margin: 0.5em;
 }
 
 .twocolumn section ul {
