@@ -1,7 +1,7 @@
 /* ------ Global Settings ------ */
 
 @page {
-    size: Letter; /* Change from the default size of A4 */
+    size: 8.5in 11in; /* Change from the default size of A4 */
     margin: 0.25in; /* Set margin on each page */
 }
 
