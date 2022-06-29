@@ -3,18 +3,23 @@
 SHELL := /bin/bash
 # .SHELLFLAGS := -ec
 
-TEX_SOURCE := resume.html
+SOURCE := resume.html
+DEST := $(shell basename ${SOURCE} .html).pdf
 
-all:
+.PHONY: ${DEST}
+${DEST}:
+	weasyprint ${SOURCE} $(shell basename ${SOURCE} .html).pdf
 
-	# evince $(shell basename ${TEX_SOURCE} .html).pdf &
+.PHONY: devserver
+devserver:
+	# evince $(shell basename ${SOURCE} .html).pdf &
 
 	while true;
 	do
 		inotifywait -e modify *
-		weasyprint ${TEX_SOURCE} $(shell basename ${TEX_SOURCE} .html).pdf
+		make ${DEST}
 	done
 
 clean:
 
-	rm ${TEX_SOURCE}.pdf
+	rm ${SOURCE}.pdf
