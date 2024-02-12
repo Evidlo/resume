@@ -47,9 +47,9 @@ h1 hr {
 
 /* ------ Other ------ */
 
-/* article { */
-/*     page-break-inside: avoid; */
-/* } */
+article {
+    page-break-inside: avoid;
+}
 
 .twocolumn {
     columns: 100px 2;
@@ -71,6 +71,13 @@ ul, p {
     list-style-type: none;
     padding-left: 1em;
     margin: 0.5em;
+}
+
+li {
+    /* FIXME - weasyprint doesn't support hanging yet */
+    /* text-indent: 1em hanging; */
+    margin-left: 1em;
+    text-indent: -1em;
 }
 
 .twocolumn section ul {
