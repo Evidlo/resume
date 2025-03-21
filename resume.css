@@ -2,8 +2,20 @@
 
 @page {
     size: 8.5in 11in; /* Change from the default size of A4 */
-    margin: 0.25in; /* Set margin on each page */
+    /* https://www.fffuel.co/ttten/  round 94% opacity 0 size mod stroke width*/
+    background-image: url("pattern.svg");
+    background-size: 250px;
+    /* background-image: url("sssquiggly.svg"); */
+    /* background-size: 250px; */
+    /* background-image: url("rrreflection.svg"); */
+    /* background-size: 150px; */
+    /* background-image: url("ooorganize.svg"); */
+    /* background-size: 150px; */
+    /* background-repeat: repeat-xy; */
+    padding: 0.25in;
+    margin: 0;
 }
+
 
 body {
     font-family: helvetica;

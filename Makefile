@@ -3,7 +3,7 @@
 SHELL := /bin/bash
 # .SHELLFLAGS := -ec
 
-SOURCE := resume.html
+SOURCE := resume_jpl.html
 DEST := $(shell basename ${SOURCE} .html).pdf
 
 .PHONY: ${DEST}
